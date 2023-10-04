@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creativity powered by memebership</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://c5.patreon.com/external/favicon/favicon-32x32.png?v=af5597c2ef">
+    <link rel="stylesheet" href="/styles/indexStyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="root__class" id="root__id">
+        <header class="header_items" id="navbar">
+            <div class="logo_section">
+                <a href="#">
+                    <span id="logo">
+                        <svg width="80" height="65" viewBox="0 0 100 100">
+                            <g>
+                                <circle cx="50" cy="40" r="15" fill="#ff424d" />
+                                <rect width="10" height="43" x="20" y="25" fill="#ff424d" />
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+                <ul class="list">
+                    <li>
+                        <p id="first_list__product" onclick="displayList('product')">Product &nbsp;<span><i
+                                    class="fa-solid fa-angle-down"></i></span></p>
+                        <div id="product_topics" onmouseleave="mouseLeave(this)">
+                            <ul>
+                                <li class="nav_head"><a href="#"><span style="font-size: 1.1em;">Getting
+                                            Started</span><br><span>Powerful tools to build your Patreon community for
+                                            free</span></a></li>
+                                <li class="nav_head"><a href="#"><span style="font-size: 1.1em;">Paid
+                                            Membership</span><br><span>Get paid for the value you create</span></a></li>
+                                <li class="nav_head"><a href="#"><span
+                                            style="font-size: 1.1em;">Commerce</span><br><span>Tools to easily sell your
+                                            digital goods</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p id="second_list__creator" onclick="displayList('creator')">For creators
+                            &nbsp;<span><i class="fa-solid fa-angle-down"></i></span></p>
+                        <div id="creator_topics" onmouseleave="mouseLeave(this)">
+                            <ul>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.625 11.626v-.001a8.622 8.622 0 0 1-6.29 8.298.28.28 0 0 1-.352-.288l.025-.474a.473.473 0 0 1 .327-.42 7.311 7.311 0 1 0-4.657.003c.185.06.315.226.327.42l.026.474a.28.28 0 0 1-.352.288 8.623 8.623 0 1 1 10.946-8.3zm-2.997-.38a5.62 5.62 0 0 1-3.036 4.99.284.284 0 0 1-.415-.264l.025-.471a.727.727 0 0 1 .295-.557 4.313 4.313 0 1 0-4.984.007.727.727 0 0 1 .296.558l.025.468a.284.284 0 0 1-.414.265 5.624 5.624 0 1 1 8.208-4.996zM12 9a1.875 1.875 0 1 1-1.875 1.875C10.125 9.839 10.965 9 12 9zm.005 4.499c1.345 0 1.516.614 1.497.972l-.3 5.626c-.018.331-.234.903-1.197.903-.963 0-1.184-.572-1.202-.903l-.3-5.626c-.019-.358.157-.972 1.502-.972z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Podcasters
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M18.988 6.452a1.44 1.44 0 0 1 2.096 0c.27.284.416.662.416 1.048v9a1.5 1.5 0 0 1-.89 1.38 1.44 1.44 0 0 1-1.622-.333L16.5 14.934V15a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v.065l2.488-2.613zM20 7.564v8.871l-3.497-3.671v-.002a.03.03 0 0 1-.003-.01V11.25l.002-.012.001-.002L20 7.564zM5.5 7.5h8A1.5 1.5 0 0 1 15 9v6a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 15V9a1.5 1.5 0 0 1 1.5-1.5z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Video Creators
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.512 11.982a1.503 1.503 0 1 0 0 3.006 1.503 1.503 0 0 0 0-3.006zm-5.169 4.066.209-.21.001-.001a.324.324 0 0 1 .458.001l2.14 2.147a.327.327 0 0 1 0 .461l-.21.21a.324.324 0 0 1-.423.028c-.23-.17-.483-.283-.72-.388-.266-.118-.515-.229-.692-.406-.177-.178-.287-.427-.405-.695a3.67 3.67 0 0 0-.386-.722.327.327 0 0 1 .028-.425z">
+                                                </path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M18.885 6.613c.17-.17.4-.266.64-.266a.907.907 0 0 0 .642-.265l1.47-1.471a.374.374 0 0 0 .1-.356 2.797 2.797 0 0 0-.709-1.289 2.797 2.797 0 0 0-1.288-.709.374.374 0 0 0-.356.1l-1.47 1.47a.908.908 0 0 0-.266.642c0 .24-.096.471-.266.641l-4.131 4.133a.378.378 0 0 1-.49.034c-1.725-1.313-3.2-1.363-4.276-.288a7.026 7.026 0 0 0-1.103 1.418c-.188.3-.355.567-.62.832-.227.227-.6.292-1.069.373-.787.137-1.842.32-2.921 1.398-1.72 1.72-1.977 4.262.988 7.225 2.965 2.964 5.509 2.708 7.23.988 1.078-1.078 1.266-2.128 1.406-2.912.083-.465.15-.837.377-1.064.265-.265.53-.434.828-.625a7.384 7.384 0 0 0 1.412-1.11c1.075-1.075 1.03-2.544-.286-4.27l-.005-.006a.379.379 0 0 1 .033-.492l4.13-4.131zm-5.961 8.662a5.669 5.669 0 0 0 1.028-.824c.262-.261.332-.49.317-.743-.018-.314-.182-.83-.735-1.555a9.1 9.1 0 0 0-1.69-1.689c-.724-.55-1.24-.714-1.554-.732-.254-.014-.483.056-.744.318a5.362 5.362 0 0 0-.81 1.021l-.074.118c-.183.296-.444.716-.84 1.111-.469.47-1.047.622-1.37.695-.169.038-.345.068-.49.093l-.02.004c-.16.027-.3.052-.443.083-.52.11-1.07.3-1.667.896-.616.615-.88 1.271-.827 1.973.055.741.485 1.8 1.815 3.13 1.33 1.33 2.39 1.76 3.133 1.816.703.052 1.36-.212 1.976-.828.6-.599.79-1.15.904-1.666.031-.143.056-.282.085-.44l.004-.022a9.15 9.15 0 0 1 .095-.487c.074-.323.23-.895.695-1.361.39-.39.8-.65 1.094-.836l.002-.001.116-.074z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Musicians
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19.504 3.758a.969.969 0 0 1 .75.75c0 .625-5.49 7.365-6.938 8.812-.938.939-2.215 1.688-2.906 1.688-.306 0-1.406-1.124-1.406-1.406 0-.691.749-1.968 1.687-2.907 1.448-1.448 8.188-6.937 8.813-6.937zM3.379 18.383c0-.329.395-.087 1-.691.507-.507.317-1.692 1.376-2.75a2.334 2.334 0 0 1 3.302 3.3 4.25 4.25 0 0 1-3.053 1.266c-1.342 0-2.625-.797-2.625-1.125z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Visual Artists
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M16.745 7.254c3.837.12 7.005 3.041 7.005 6.746 0 1.897-.84 3.6-2.17 4.816.198.356.466.654.75.935.346.342.47.847.274 1.296-.198.456-.66.71-1.155.675-.939-.066-2.205-.293-3.195-1.171-.562.13-1.15.199-1.754.199-3.946 0-7.25-2.967-7.25-6.75 0-3.3 2.514-5.979 5.775-6.61-1.138-1.465-2.96-2.487-5.087-2.626-3.778-.246-6.919 2.375-7.137 5.722-.122 1.873.684 3.626 2.085 4.862l.397.351-.198.492a5.01 5.01 0 0 1-1.059 1.597c.84-.09 1.659-.35 2.274-.962l.338-.337.449.165a7.44 7.44 0 0 0 2.962.434c.28.505.625.973 1.027 1.392l-.042.007a8.858 8.858 0 0 1-1.996.094 8.854 8.854 0 0 1-2.037-.373c-1.24.992-2.795 1.132-3.906 1.12-.497-.004-.934-.293-1.1-.754-.166-.46-.016-.96.362-1.282.412-.352.818-.728 1.115-1.219-1.458-1.486-2.31-3.505-2.168-5.685.28-4.284 4.242-7.413 8.732-7.12 2.897.188 5.377 1.751 6.709 3.986zM10.75 14c0-2.844 2.517-5.25 5.75-5.25s5.75 2.406 5.75 5.25c0 1.593-.779 3.035-2.038 4.009l-.42.324.167.504c.165.5.41.913.67 1.257-.608-.14-1.17-.402-1.587-.873l-.316-.359-.458.135a6.243 6.243 0 0 1-1.768.253c-3.233 0-5.75-2.406-5.75-5.25z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Communities
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19.127 4.873a1.255 1.255 0 0 0-1.775 0l-.532.533 1.774 1.774.533-.532c.49-.49.49-1.285 0-1.775zM17.53 8.245 15.755 6.47 5.491 16.734l-.665 2.44 2.44-.665L17.53 8.245zm-1.242-4.436a2.76 2.76 0 1 1 3.904 3.904L8.189 19.715a.752.752 0 0 1-.334.194l-3.904 1.065a.753.753 0 0 1-.924-.925l1.064-3.904a.753.753 0 0 1 .194-.334L16.288 3.809z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Writers & Journalists
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.677 16.145c-.373-.213-.877-.387-1.67-.387-.791 0-1.296.174-1.668.387-.4.23-.732.55-1.15 1.004l-.183.202c-.776.86-1.946 2.157-4.123 2.157a4.125 4.125 0 0 1-4.125-4.125c0-4.391.699-7.51 2.777-9.418 2.049-1.881 5.05-2.207 8.473-2.207 3.422 0 6.424.326 8.472 2.207 2.079 1.908 2.778 5.027 2.778 9.418a4.125 4.125 0 0 1-4.125 4.125c-2.177 0-3.347-1.297-4.123-2.156-.064-.072-.125-.14-.184-.203-.417-.453-.749-.774-1.15-1.004zm-5.42-3.387v-1.5h1.5a.375.375 0 0 0 .376-.375v-.75a.375.375 0 0 0-.375-.375h-1.5v-1.5a.375.375 0 0 0-.375-.375h-.75a.375.375 0 0 0-.375.375v1.5h-1.5a.375.375 0 0 0-.375.375v.75c0 .207.168.375.375.375h1.5v1.5c0 .207.168.375.375.375h.75a.375.375 0 0 0 .375-.375zm7.841 3.559c.797.872 1.544 1.69 3.035 1.69a2.625 2.625 0 0 0 2.625-2.624c0-8.668-2.862-10.125-9.75-10.125s-9.75 1.457-9.75 10.125a2.625 2.625 0 0 0 2.625 2.625c1.49 0 2.238-.819 3.034-1.691.909-.995 1.88-2.06 4.09-2.06 2.211 0 3.183 1.065 4.091 2.06zM16 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm2-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Gaming Creators
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M12 20.25c-1.96 0-9.375-4.725-9.375-11.106A5.334 5.334 0 0 1 7.884 3.75 5.215 5.215 0 0 1 12 5.792a5.214 5.214 0 0 1 4.117-2.042 5.334 5.334 0 0 1 5.258 5.394c0 6.381-7.415 11.106-9.375 11.106zm4.117-15C13.686 5.25 12.86 7.5 12 7.5c-.86 0-1.685-2.25-4.116-2.25a3.832 3.832 0 0 0-3.759 3.894c0 5.663 6.894 9.594 7.875 9.606.982-.012 7.875-3.943 7.875-9.606a3.833 3.833 0 0 0-3.758-3.894z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Nonprofits
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.725 13.394A.5.5 0 0 0 5 13.84v.66s0 5 7 5 7-5 7-5v-.66a.5.5 0 0 0-.725-.446l-.226.114a1 1 0 0 0-.549.892v.086l-.006.08a3.485 3.485 0 0 1-.598 1.574C16.346 16.925 15.094 18 12 18s-4.346-1.075-4.896-1.86a3.482 3.482 0 0 1-.598-1.574 1.536 1.536 0 0 1-.006-.08V14.4a1 1 0 0 0-.55-.893l-.225-.113z">
+                                                </path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10.57 4.84c.9-.454 1.96-.454 2.86 0l8.275 4.179a.53.53 0 0 1 .295.48v7.25a.75.75 0 1 1-1.5 0v-6.16l-7.07 3.57a3.17 3.17 0 0 1-2.86 0L2.295 9.981a.54.54 0 0 1 0-.962L10.57 4.84zm2.184 1.34L19.33 9.5l-6.576 3.32a1.67 1.67 0 0 1-1.508 0L4.67 9.5l6.576-3.32a1.67 1.67 0 0 1 1.508 0z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Tutorials and Education
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M12.004 18.931a47.296 47.296 0 0 1-2.37-3.877c-.589-1.089-1.131-2.223-1.523-3.296-.398-1.091-.607-2.029-.607-2.75a4.5 4.5 0 1 1 9 0c0 .721-.209 1.659-.607 2.75-.392 1.073-.934 2.207-1.524 3.296a47.223 47.223 0 0 1-2.37 3.877zm-.596 1.771C10.367 19.244 6.004 12.9 6.004 9.008a6 6 0 1 1 12 0c0 3.892-4.363 10.236-5.404 11.694a.735.735 0 0 1-1.192 0z">
+                                                </path>
+                                                <path d="M14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"></path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Local Businesses
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div>
+                                            <svg class="svg_list" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.649 16.551 16.55 20.65a1.2 1.2 0 0 1-.848.351H4.2A1.2 1.2 0 0 1 3 19.8V8.297a1.2 1.2 0 0 1 .351-.848L7.45 3.35A1.2 1.2 0 0 1 8.297 3H19.8A1.2 1.2 0 0 1 21 4.2v11.503a1.2 1.2 0 0 1-.351.848zm-5.299.049v2.9H5.81l2.9-2.9h6.64zM4.5 8.9v9.79l3.15-3.15V8.9H4.5zm4.65 0v6.2h6.2V8.9h-6.2zm0-1.5V4.5h9.54l-2.9 2.9H9.15zm-1.5-2.129v2.13H5.521L7.65 5.27zm9.2 9.829V8.46l2.65-2.65v9.296a.77.77 0 0 0-.099-.006H16.85zm0 1.5v1.629l1.629-1.63H16.85z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-left: 5px;">
+                                            Creators-of-all-kinds
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Pricing</p>
+                    </li>
+                    <li>
+                        <p id="third_list__resource" onclick="displayList('resource')">Resources &nbsp;<span><i
+                                    class="fa-solid fa-angle-down"></i></span></p>
+                        <div id="resource_topics" onmouseleave="mouseLeave(this)">
+                            <ul>
+                                <li><a href=""><span>Blog</span></a></li>
+                                <li><a href=""><span>Creator Hub</span></a></li>
+                                <li><a href=""><span>App Directory</span></a></li>
+                                <li><a href=""><span>Help Center & FAQ</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-right media_sectionRight">
+                <form action="" class="form">
+                    <div class="search">
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div>
+                            <input class="find" type="text" placeholder="Find a creator">
+                        </div>
+                    </div>
+                </form>
+                <div class="login">
+                    <a href="#">Login</a>
+                </div>
+                <div class="subscription">
+                    Start a paid memebership
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu(this)"></i>
+                </div>
+            </div>
+            <div class="media-search">
+                <div class="search">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div>
+                        <input class="media-find" type="text" placeholder="Find a creator">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="media-nav">
+            <ul class="media-items">
+                <li class="item">
+                    <a href="#" class="titles" id="title1" onclick=" sub_topics('product')"><span>Product</span><i
+                            class="fa-solid fa-angle-down title-icon"></i></a>
+                    <div id="invisible">
+                        <ul class="sub-topics products">
+                            <li><a href="#"><span class="nav-heading">Getting Started</span>
+                                    <br><span class="sub-head__details">Powerful tools to build your Patreon community
+                                        for free</span></a></li>
+                            <li><a href="#"><span class="nav-heading">Paid Membership</span>
+                                    <br><span class="sub-head__details">Get paid for the value you create</span></a>
+                            </li>
+                            <li><a href="#"><span class="nav-heading">Commerce</span>
+                                    <br><span class="sub-head__details">Tools to easily sell your digital
+                                        goods</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#" class="titles" id="title2" onclick=" sub_topics('creator')"><span>For creators</span><i
+                            class="fa-solid fa-angle-down title-icon1"></i></a>
+                    <div id="invisible1">
+                        <ul class="sub-topics creators">
+                            <li><a href="#">Podcasters</a></li>
+                            <li><a href="#">Musicians</a></li>
+                            <li><a href="#">Visual Artists</a></li>
+                            <li><a href="#">Communities</a></li>
+                            <li><a href="#">Writers & Journalists</a></li>
+                            <li><a href="#">Gaming Creators</a></li>
+                            <li><a href="#">Nonprofits</a></li>
+                            <li><a href="#">Tutorials and Education</a></li>
+                            <li><a href="#">Local Businesses</a></li>
+                            <li><a href="#">Creators-of-all-kinds</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item"><a href="#" class="titles"><span>Pricing</span></a></li>
+                <li class="item">
+                    <a href="#" class="titles" id="title3" onclick=" sub_topics('resource')"><span>Resources</span><i
+                            class="fa-solid fa-angle-down title-icon2"></i></a>
+                    <div id="invisible2">
+                        <ul class="sub-topics resources">
+                            <li><a href=""><span>Blog</span></a></li>
+                            <li><a href=""><span>Creator Hub</span></a></li>
+                            <li><a href=""><span>App Directory</span></a></li>
+                            <li><a href=""><span>Help Center & FAQ</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item"><a href="#" class="titles">Start a paid membership</a></li>
+                <li class="item"><a href="#" class="titles">Log In</a></li>
+                <li class="item"><a href="#" class="titles">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- body -->
+    <div class="body_container">
+        <!-- ? banner -->
+        <div class="banner_container">
+            <div class="banner_parent">
+                <div class="banner">
+                    <div id="remove_btn">
+                        <i class="fa-regular fa-circle-xmark" onclick="bannerRemove()"></i>
+                    </div>
+                    <div id="text_banner">
+                        <h2>Introducing a new Patreon</h2>
+                        <div class="text">
+                            <p>
+                                We're launching new ways for creators to directly reach their biggest fans,
+                                strengthen
+                                their communities, and grow their businesses.
+                            </p>
+                            <a href="#">Lear more</a>
+                        </div>
+                        <div class="btn_access">
+                            <button>Get access</button>
+                        </div>
+                    </div>
+                    <div id="image_banner">
+                        <img src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2023/06/FM-MultipleWaysToGetPaid-THT-768x433.jpg"
+                            alt="news">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ! title & button tags -->
+        <div class="page_topics">
+            <div class="page_heading">
+                <h1>Create on your terms</h1>
+            </div>
+            <div class="page_btn">
+                <button>Start a paid membership</button>
+            </div>
+        </div>
+        <!-- ! marquee image tags -->
+        <div class="marquee_container">
+            <div class="first_row__marquee">
+                <div class="marquee">
+                    <a href="#" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/29-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/27-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/14-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/19-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/28-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/1-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/15-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/8-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/25-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2023/01/If-books-could-kill-1-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/11-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/17-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/12-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/10-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/36-300x207.png"
+                            alt=""></a>
+                    <a href="#" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/29-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/27-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/14-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/19-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/28-300x207.jpg"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="second_row__marquee">
+                <div class="marqueeEven">
+                    <a href="#" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/38-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/18-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/2-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/40-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/44-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/5-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2023/03/tile-card-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/21-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/4-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/30-300x207.jpg"
+                            alt=""></a>
+                    <a href="#" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/38-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/18-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/19-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/40-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/44-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/5-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2023/03/tile-card-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/21-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/4-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/30-300x207.jpg"
+                            alt=""></a>
+
+                </div>
+            </div>
+            <div class="third_row__marquee">
+                <div class="marquee">
+                    <a href="#" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/29-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/27-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/14-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/19-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/28-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/1-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/15-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/8-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/25-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2023/01/If-books-could-kill-1-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/11-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/17-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/12-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/10-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/36-300x207.png"
+                            alt=""></a>
+                    <a href="#" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/29-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/27-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/14-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/19-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/28-300x207.jpg"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="fourth_row__marquee">
+                <div class="marqueeEven">
+                    <a href="#" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/38-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/18-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/2-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/40-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/44-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/5-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2023/03/tile-card-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/21-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/4-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/30-300x207.jpg"
+                            alt=""></a>
+                    <a href="#" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/38-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/18-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/19-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/40-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/44-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/5-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2023/03/tile-card-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/21-300x207.jpg"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/4-300x207.png"
+                            alt=""></a>
+                    <a href="" class="content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/07/30-300x207.jpg"
+                            alt=""></a>
+                </div>
+            </div>
+            <!-- ? Search pateron -->
+            <div class="search_patreon">
+                <div class="search_content">
+                    <div class="search_title">
+                        <h2>Search over 260,000 creators on Patreon</h2>
+                    </div>
+                    <div class="search_input">
+                        <div class="input_bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Find a creator">
+                        </div>
+                        <div class="btn_bar">
+                            <p>Search</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ? pateron details  -->
+            <div class="pateron_details">
+                <div class="pat_details__heading">
+                    <h2>What is Patreon?</h2>
+                </div>
+                <div class="pat_details__para">
+                    <p>Patreon gives creators the tools they need to reliably reach their fans,
+                        strengthen their communities, and build sustainable businesses.</p>
+                </div>
+            </div>
+            <!-- ? pateron image source links -->
+            <div class="block">
+                <div class="block_grid">
+                    <div class="block_details">
+                        <div class="block_content">
+                            <div class="block_img first_block__img">
+                            </div>
+                        </div>
+                        <div class="block_text">
+                            <h2>Create your space</h2>
+                            <p>Build your creative home outside of social media.
+                                Fans can join your community to access the work they love directly from you.</p>
+                        </div>
+                    </div>
+                    <div class="block_details">
+                        <div class="block_content">
+                            <div class="block_img second_block__img">
+                            </div>
+                        </div>
+                        <div class="block_text">
+                            <h2>Directly reach your fans</h2>
+                            <p>Use a suite of publishing tools to share any media directly to your fans. No algorithms.
+                                No ads. When you share it, they see it.</p>
+                        </div>
+                    </div>
+                    <div class="block_details">
+                        <div class="block_content">
+                            <div class="block_img third_block__img">
+                            </div>
+                        </div>
+                        <div class="block_text">
+                            <h2>Grow your business</h2>
+                            <p>Get powerful insights and analytics so you know who your fans are and where to focus your
+                                creative efforts.</p>
+                        </div>
+                    </div>
+                    <div class="block_details">
+                        <div class="block_content">
+                            <div class="block_img fourth_block__img">
+                            </div>
+                        </div>
+                        <div class="block_text">
+                            <h2>Earn how you want</h2>
+                            <p>Offer a paid membership or sell digital products to start earning an income directly from
+                                your fans at any time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ? Who used patreon -->
+            <div class="pateron_uses">
+                <div class="pat_uses__heading">
+                    <h2>Who uses Patreon?</h2>
+                </div>
+                <div class="pat_uses__para">
+                    <p>Hundreds of thousands of video creators, podcasters, writers,
+                        gamers, musicians, and more are achieving creative and financial
+                        freedom doing what they love on Patreon.</p>
+                </div>
+            </div>
+            <!-- ? Creating topics -->
+            <div class="uses">
+                <div class="creating_topics">
+                    <div class="creating_titles active">
+                        <p class="user_title" onclick="displayListVideo()">Video Creators</p>
+                    </div>
+                    <div class="creating_titles">
+                        <p class="user_title" onclick="displayListPod()">Podcasters</p>
+                    </div>
+                    <div class="creating_titles">
+                        <p class="user_title" onclick="displayListVis()">Visual Artists</p>
+                    </div>
+                    <div class="creating_titles">
+                        <p class="user_title" onclick="displayListMusic()">Musicians</p>
+                    </div>
+                    <div class="creating_titles">
+                        <p class="user_title" onclick="displayListOther()">Others</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ? display example topics -->
+            <div class="user_topics">
+                <div class="video_creators__list" id="video_creators__list">
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/Mega-64.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/01_video_02.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/01_video_03.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/Channel-5.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/01_video_05.png"
+                            alt=""></a>
+                </div>
+                <div class="podcasters__list">
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/02_pod_01.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/02_pod_02.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/02_pod_03.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/02_pod_04.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/02_pod_05.png"
+                            alt=""></a>
+                </div>
+                <div class="visual_artists__list">
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/03_vis_01.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/03_vis_02.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/03_vis_03.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/03_vis_04.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/03_vis_05.jpg"
+                            alt=""></a>
+                </div>
+                <div class="musicians__list">
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/04_music_01.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/04_music_02.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/04_music_03.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/04_music_04.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/04_music_05.png"
+                            alt=""></a>
+                </div>
+                <div class="others__list">
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/05_other_01.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/05_other_02.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/05_other_03.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/05_other_04.png"
+                            alt=""></a>
+                    <a href="#" class="user_content"><img
+                            src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2022/08/05_other_05.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <!-- ? Creators perspective -->
+            <div class="perspective">
+                <div class="perspective_heading">
+                    <h2>How creators make it their own</h2>
+                </div>
+                <div class="perspective__para">
+                    <p>See how creators are using Patreon to strengthen their
+                        communities, own their fan relationships, and grow their
+                        businesses.</p>
+                </div>
+            </div>
+            <!-- ? works -->
+            <div class="creators_work">
+                <div class="ideas">
+                    <div class="ideas_content">
+                        <div class="ideas_img" id="first_idea__img">
+                            <img src="https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2023/05/Patreon_RossTran-325-1.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="ideas_text">
+                        <p>How illustrator Ross Tran makes a living making art and teaching design courses</p>
+                        <br><a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="ideas">
+                    <div class="ideas_content">
+                        <div class="ideas_img" id="second_idea__img">
+                            <img src="/images/creator2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="ideas_text">
+                        <p>How an avid fan community powers Noclip’s video production company</p>
+                        <br><a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="ideas">
+                    <div class="ideas_content">
+                        <div class="ideas_img" id="third_idea__img">
+                            <img src="/images/creator3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="ideas_text">
+                        <p>How Patrick Hinds turned his true crime obsession into a career</p>
+                        <br><a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ownership -->
+            <div class="ownership">
+                <div class="own_heading">
+                    <h2>Take ownership of your creativity</h2>
+                </div>
+                <div class="own_btn">
+                    <button>Start a paid membership</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! footer -->
+    <div class="footer">
+        <div class="footer_center">
+            <div class="footer_logo">
+                <span id="foo_logo">
+                    <svg width="80" height="65" viewBox="0 0 100 100">
+                        <g>
+                            <circle cx="50" cy="40" r="15" fill="#fff" />
+                            <rect width="10" height="43" x="20" y="25" fill="#fff" />
+                        </g>
+                    </svg>
+                </span>
+            </div>
+            <!-- ? footer main -->
+            <div class="footer_main">
+                <div class="region">
+                    <div class="inner_region">
+                        <div class="language"><button>Language:English (United States)</button></div>
+                        <div class="country"><button>
+                                <img src="/images/indianFlag.png" alt="" width="8px" height="8px">&nbsp;India</button>
+                        </div>
+                        <div class="money"><button>Currency: USD</button></div>
+                    </div>
+                </div>
+                <div class="footer_content">
+                    <div class="footer_product">
+                        <h3>PRODUCT</h3>
+                        <ul>
+                            <li><a href="#">Pro</a></li>
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_creator">
+                        <h3>FOR CREATORS</h3>
+                        <ul>
+                            <li><a href="#">Podcasters</a></li>
+                            <li><a href="#">Video Creators</a></li>
+                            <li><a href="#">Musicians</a></li>
+                            <li><a href="#">Visual Artists</a></li>
+                            <li><a href="#">Writers & Journalists</a></li>
+                            <li><a href="#">Communities</a></li>
+                            <li><a href="#">Gaming Creators</a></li>
+                            <li><a href="#">Nonprofits</a></li>
+                            <li><a href="#">Tutorials and Education</a></li>
+                            <li><a href="#">Local Businesses</a></li>
+                            <li><a href="#">Creators-of-all-kinds</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_resource">
+                        <h3>RESOURCES</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Creators Hub</a></li>
+                            <li><a href="#">Help Center & FAQ</a></li>
+                            <li><a href="#">App Directory</a></li>
+                            <li><a href="#">Developers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_company">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy & Terms</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Impressum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ? social media -->
+                <div class="social">
+                    <div class="twitter">
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="fb">
+                        <div>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="insta">
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="youtube">
+                        <div>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- authorisation -->
+            <div class="footer_last">
+                <div class="authorize">
+                    <a href="#">&#169; Patreon</a>
+                    <a href="#">Sitemap</a>
+                </div>
+                <div class="address">
+                    <p>600 Townsend Street, Suite 500
+                        San Francisco, CA 94103<br>
+                        USA<br>
+                        Phone: +1(833)972-8766
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="/javascript/main.js"></script>
+
+</html>
